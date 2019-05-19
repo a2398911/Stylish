@@ -1,0 +1,235 @@
+.header{
+  position: relative;
+  @media (min-width: 768px) {
+    &::after{
+      content: "";
+      position: absolute;
+      bottom: -40px;
+      height: 40px;
+      width: 100%;
+      background-color: $color-light-black;
+    }
+  }
+}
+.header-nav{
+  position: relative;
+  @media (min-width: 768px) { 
+    margin-left: 60px;
+    margin-right: 54px;
+  }
+}
+.nav-logo{
+  width: 151px;
+  margin: 16.9px 0;
+  background: center/cover no-repeat;
+  @media (min-width: 768px) { 
+    height: 48px;
+    width: 258px;
+    margin: 26px 0;
+  }
+}
+.nav-mobile-search-icon{
+  background: url(../images/search.png) center/cover no-repeat;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  right: 10px;
+  top: 12.289px;
+}
+.nav-menus-wrap{
+  width: 100%;
+  background-color: $color-light-black;
+  position: relative;
+  @media (min-width: 768px) { 
+    width: initial;
+    background-color: #fff;
+  }
+}
+.nav-menus{
+  width: 100%;
+  max-width: 500px;
+  height: 50px;
+  padding: 0 44px;
+  position: relative;
+  @media (min-width: 768px) {
+    margin-left: 30px;
+    width: 250px; 
+    height: 48px;
+    padding: initial;
+    background-color: #fff;
+  }
+  @media (min-width: 992px) {
+    width: 388px;
+  }
+  @media (min-width: 1400px) {
+    margin-left: 96px;
+  }
+}
+.menu-list{
+  font-size: 16px;
+  position: relative;
+  a {
+    display: inline-block;
+    color: $color-light-gray;
+    &:active, &:hover{
+      color: $color-dark-brow;
+    }
+    @media (min-width: 768px) {
+      line-height: 28px;
+      color: $color-text;
+    }
+  }
+  @media (min-width: 768px) {
+    letter-spacing: 8px;
+  }
+  @media (min-width: 992px) {
+    letter-spacing: 30px;
+    font-size: 20px;
+  }
+}
+.menu-list.active{
+  a {
+    color: #fff;
+    pointer-events: none;
+    @media (min-width: 768px) {
+      color: $color-dark-brow;
+    }
+  }
+}
+.menu-list-SeparationLine{
+  height: 26px;
+  width: 2px;
+  position: initial;
+  left: initial;
+  background-color: $color-light-gray;
+  @media (min-width: 992px) {
+    position: absolute;
+    left: 108px;
+    background-color: $color-text;
+  }
+}
+.menu-list-SeparationLine.line2{
+  right: initial;
+  @media (min-width: 992px) {
+    left: 250px;
+  }
+}
+.nav-tools{
+  margin-left: auto;
+}
+.search-wrap{
+  position: relative;
+}
+.search-input{
+  width: 214px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid $color-input-active;
+  padding: 10px 20px;
+  color: $color-dark-brow;
+  &:focus{
+    outline: 0;
+    & + span {
+      background-image: url(../images/search-hover.png);
+    }
+  }
+  @media (min-width: 768px) {
+    width: 100%;
+  }
+}
+.search-icon{
+  position: absolute;
+  background: url(../images/search.png) center/cover no-repeat;
+  height: 40px;
+  width: 40px;
+  z-index: 1;
+  right: 10px;
+  top: 0;
+  
+}
+.tool-btn-wrap{
+  position: relative;
+}
+.tool-btn{
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+  @media (min-width: 992px) {
+    height: 44px;
+    width: 44px;
+    margin-left: 42px;
+  }
+}
+.tool-btn.shoppingCart{
+  background: url(../images/cart.png) center/cover no-repeat;
+  position: relative;
+  &:hover{
+    background-image: url(../images/cart-hover.png);
+  }
+}
+.tool-btn.member{
+  background: url(../images/member.png) center/cover no-repeat;
+  position: relative;
+  &:hover{
+    background-image: url(../images/member-hover.png);
+  }
+}
+.tool-btn.search{
+  background: url(../images/search.png) center/cover no-repeat;
+  &:hover{
+    background-image: url(../images/search-hover.png);
+  }
+}
+.shoppingCart-productNum{
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  background-color: $color-light-brow;;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  line-height: 22px;
+  right: 0;
+  bottom: 10%;
+}
+.member-dropdown{
+  background-color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  position: absolute;
+  right: -26px;
+  bottom: -50px;
+  min-width: 90px;
+  border-radius: 10px;
+  z-index: 1;
+  box-shadow: 0px 0px 8px 0px rgba($color-light-gray, .3);
+  display: none;
+  a {
+    color: $color-text;
+    padding: 5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    &:hover{
+      color: $color-light-brow;
+    }
+  }
+}
+.member-wrap{
+  &:hover{
+    & .member-dropdown{
+      display: flex;
+    }
+  }
+}
+.merberHeadPhoto{
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  border-radius: 50%;
+  transform: translate(-50%,50%);
+  background: url() center/cover no-repeat;
+}

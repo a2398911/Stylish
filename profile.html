@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Stylish</title>
+  <meta name="keywords" content="Stylish">
+  <meta name="description" content="Stylish自然生活好感衣，將回歸衣著最簡單純粹的質地，講求最基本的質感，由挑選好布料開始傳遞幸福感的新生活哲學，與大家一起共享對衣著的用心堅持與自在有感 ...">
+  <link rel="stylesheet" href="./style/all.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135620060-1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-135620060-1');
+  </script>
+  <link rel="stylesheet" href="./style/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <nav class="header-nav h-flex h-align-items-center h-flex-column h-flex-md-row">
+        <a href="./index.html"><img src="./images/logo.png" alt="Logo" class="nav-logo"/></a>
+        <span class="nav-mobile-search-icon h-md-none"></span>
+        <div class="nav-menus-wrap h-flex h-justify-content-center">
+          <div class="nav-mobile-searchInput-wrap h-none h-justify-content-center h-align-items-center">
+            <form action="./" class="mobileInputSearchAction h-flex h-justify-content-center h-align-items-center" name="mobileSearchAction" method="get">
+              <input type="text" class="nav-mobile-searchInput" />
+            </form>
+          </div>
+          <ul class="nav-menus h-flex h-justify-content-between h-align-items-center h-align-items-md-end">
+            <li class="menu-list">
+              <a href="./index.html?category=women">女裝</a>
+            </li>
+            <li class="menu-list-SeparationLine line1"></li>
+            <li class="menu-list">
+              <a href="./index.html?category=men">男裝</a>
+            </li>
+            <li class="menu-list-SeparationLine line2"></li>
+            <li class="menu-list">
+              <a href="./index.html?category=accessories">配件</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-tools h-md-flex h-none">
+          <div class="search-wrap h-none h-xl-block">
+            <form action="./" class="inputSearchAction" name="searchAction" method="get">
+              <input type="text" class="search-input" />
+              <span class="search-icon"></span>
+            </form>
+          </div>
+          <div class="tool-btn-wrap h-flex">
+            <a href="#" class="tool-btn search h-inline-block h-xl-none pad-searchIcon"></a>
+            <a href="./cart.html" class="tool-btn shoppingCart h-inline-block">
+              <div class="shoppingCart-productNum"></div>
+            </a>
+            <div class="member-wrap">
+              <a href="#" class="tool-btn member h-inline-block">
+                <span class="merberHeadPhoto"></span>
+              </a>
+              <div class="member-dropdown h-flex-column">
+                <a href="./profile.html" class="member-info">會員中心</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="mobile-nav h-md-none h-flex h-justify-content-center">
+      <div class="mobile-nav-btn-wrap h-flex h-justify-content-between h-align-items-center">
+        <a href="./cart.html" class="mobile-nav-btn h-flex h-align-items-center">
+          <span class="mobile-nav-btn-icon-shoppingCart h-inline-block">
+            <span class="shoppingCart-productNum"></span>
+          </span>
+          <span class="mobile-nav-btn-title">購物車</span>
+        </a>
+        <div class="mobile-nav-separationLine"></div>
+        <a href="./profile.html" class="mobile-nav-btn h-flex h-align-items-center">
+          <span class="mobile-nav-btn-icon-member h-inline-block"></span>
+          <span class="mobile-nav-btn-title">會員</span>
+        </a>
+      </div>
+    </div>
+      <section class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="profile-wrap h-flex h-flex-column">
+                <div class="h-flex h-align-items-center">
+                  <span class="profile-photo h-inline-block h-flex h-align-items-center h-justify-content-center"></span>
+                  <ul class="profile-info-wrap">
+                    <li class="profile-name profile-item h-flex h-align-items-center"><i class="fas fa-user"></i>尚未登入</li>
+                    <li class="profile-grade profile-item h-none"><i class="fas fa-medal"></i>銀級會員</li>
+                    <li class="profile-email profile-item"></li>
+                    <button class="log-out profile-log-out logBtn profile-item">登出會員</button>
+                    <button class="login-fb profile-log-in logBtn profile-item">登入會員</button>
+                  </ul>
+                </div>
+                <ul class="oderInfo-wrap h-flex">
+                  <li class="oderInfo-title active">訂單處理中</li>
+                  <li class="oderInfo-title">訂單待收貨</li>
+                  <li class="oderInfo-title">訂單已完成</li>
+                  <li class="oderInfo-title">訂單已取消</li>
+                </ul>
+                <div class="oderInfo-content">
+                  <ul class="oderInfo-item h-flex h-flex-wrap h-justify-content-between h-flex-column h-flex-lg-row">
+                    <li class="oderInfo-noOpen"><i class="fas fa-exclamation-triangle"></i> 功能暫時未開放</li>
+                  </ul>
+                  <!-- <ul class="oderInfo-item h-flex h-flex-wrap h-justify-content-between h-flex-column h-flex-lg-row">
+                    <li class="oderInfo-idNumber">訂單編號: 1810110182PC1</li>
+                    <li class="oderInfo-date">訂單日期: 2018-10-11</li>
+                    <li class="oderInfo-productList"><a href="#">訂單項目明細</a></li>
+                    <li class="oderInfo-totalPrice">訂單總額: NT.4000</li>
+                    <li class="oderInfo-status">訂單狀態: 處理中</li>
+                  </ul>
+                  <ul class="oderInfo-item h-flex h-flex-wrap h-justify-content-between h-flex-column h-flex-lg-row">
+                    <li class="oderInfo-idNumber">訂單編號: 1810110182PC1</li>
+                    <li class="oderInfo-date">訂單日期: 2018-10-11</li>
+                    <li class="oderInfo-productList"><a href="#">訂單項目明細</a></li>
+                    <li class="oderInfo-totalPrice">訂單總額: NT.4000</li>
+                    <li class="oderInfo-status">訂單狀態: 處理中</li>
+                  </ul> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <footer class="footer h-flex h-align-items-center">
+      <div
+        class="container h-flex h-align-items-md-center h-flex-wrap h-justify-content-center"
+      >
+        <nav class="footer-nav">
+          <ul
+            class="footer-nav-menus h-flex-column h-flex-md-row h-flex h-flex-wrap h-flex-md-nowrap"
+          >
+            <li class="footer-nav-list active">
+              <a href="#">關於 Stylish</a>
+            </li>
+            <li class="footer-nav-list"><a href="#">服務條款</a></li>
+            <li class="footer-nav-list"><a href="#">隱私政策</a></li>
+            <li class="footer-nav-list"><a href="#">聯絡我們</a></li>
+            <li class="footer-nav-list"><a href="#">FAQ</a></li>
+          </ul>
+        </nav>
+        <div class="footer-contact-icons">
+          <a href="#" class="contact-icon link h-inline-block"></a>
+          <a href="#" class="contact-icon twitter h-inline-block"></a>
+          <a href="#" class="contact-icon facebook h-inline-block"></a>
+        </div>
+        <div class="footer-allRightsReserved h-flex h-justify-content-center">
+          © 2018. All rights reserved.
+        </div>
+      </div>
+      <script src="./js/search.js"></script>
+      <script src="./js/getApi.js"></script>
+      <script src="./js/storage.js"></script>
+      <script src="./js/facebook.js"></script>
+      <script src="./js/profile.js"></script>
+    </footer>
+  </div>
+</body>
+</html>

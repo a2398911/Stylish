@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Stylish</title>
+    <meta name="keywords" content="Stylish">
+    <meta name="description" content="Stylish自然生活好感衣，將回歸衣著最簡單純粹的質地，講求最基本的質感，由挑選好布料開始傳遞幸福感的新生活哲學，與大家一起共享對衣著的用心堅持與自在有感 ...">
+    <link rel="stylesheet" href="./style/all.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135620060-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-135620060-1');
+    </script>
+    <link rel="stylesheet" href="./style/all.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="header">
+        <nav class="header-nav h-flex h-align-items-center h-flex-column h-flex-md-row">
+          <a href="./index.html"><img src="./images/logo.png" alt="Logo" class="nav-logo"/></a>
+          <span class="nav-mobile-search-icon h-md-none"></span>
+          <div class="nav-menus-wrap h-flex h-justify-content-center">
+            <div class="nav-mobile-searchInput-wrap h-none">
+              <form action="./" class="mobileInputSearchAction h-flex h-justify-content-center h-align-items-center" name="mobileSearchAction" method="get">
+                <input type="text" class="nav-mobile-searchInput" />
+              </form>
+            </div>
+            <ul class="nav-menus h-flex h-justify-content-between h-align-items-center h-align-items-md-end">
+              <li class="menu-list">
+                <a href="./index.html?category=women">女裝</a>
+              </li>
+              <li class="menu-list-SeparationLine line1"></li>
+              <li class="menu-list">
+                <a href="./index.html?category=men">男裝</a>
+              </li>
+              <li class="menu-list-SeparationLine line2"></li>
+              <li class="menu-list">
+                <a href="./index.html?category=accessories">配件</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-tools h-md-flex h-none">
+            <div class="search-wrap h-none h-xl-block">
+              <form action="./" class="inputSearchAction" name="searchAction" method="get">
+                <input type="text" class="search-input" />
+                <span class="search-icon"></span>
+              </form>
+            </div>
+            <div class="tool-btn-wrap h-flex">
+              <a href="#" class="tool-btn search h-inline-block h-xl-none pad-searchIcon"></a>
+              <a href="./cart.html" class="tool-btn shoppingCart h-inline-block">
+                <div class="shoppingCart-productNum"></div>
+              </a>
+              <div class="member-wrap">
+                <a href="#" class="tool-btn member h-inline-block">
+                  <span class="merberHeadPhoto"></span>
+                </a>
+                <div class="member-dropdown h-flex-column">
+                  <a href="./profile.html" class="member-info">會員中心</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="mobile-nav h-md-none h-flex h-justify-content-center">
+        <div class="mobile-nav-btn-wrap h-flex h-justify-content-between h-align-items-center">
+          <a href="./cart.html" class="mobile-nav-btn h-flex h-align-items-center">
+            <span class="mobile-nav-btn-icon-shoppingCart h-inline-block">
+              <span class="shoppingCart-productNum"></span>
+            </span>
+            <span class="mobile-nav-btn-title">購物車</span>
+          </a>
+          <div class="mobile-nav-separationLine"></div>
+          <a href="./profile.html" class="mobile-nav-btn h-flex h-align-items-center">
+            <span class="mobile-nav-btn-icon-member h-inline-block"></span>
+            <span class="mobile-nav-btn-title">會員</span>
+          </a>
+        </div>
+      </div>
+      <section class="section">
+        <div class="container-product h-flex">
+          <div class="product-introduction-wrap h-lg-flex">
+            <div class="product-introduction-photo-wrap">
+              <div class="product-introduction-photo"></div>
+            </div>
+            <div class="product-introduction-content">
+              <div class="product-introduction-title"></div>
+              <div class="product-introduction-number"></div>
+              <div class="product-introduction-price"></div>
+              <ul class="product-introduction-colors h-flex">
+                <li class="product-colors-title">顏色</li>
+    
+              </ul>
+              <ul class="product-introduction-size h-flex h-align-items-center">
+                <li class="product-size-title">尺寸</li>
+              </ul>
+              <div class="product-introduction-num h-flex h-align-items-center">
+                <div class="product-num-title h-none h-lg-block">數量</div>
+                <div class="product-num-input disabled h-flex h-align-items-center h-justify-content-between">
+                  <a href="#" class="product-reduceBtn">-</a>
+                  <div class="currentNum">1</div>
+                  <a href="#" class="product-addBtn">+</a>
+                </div>
+              </div>
+              <button class="carshopping-btn disabled">請選擇尺寸</button>
+              <div class="product-introduction-description-wrap h-flex h-flex-column h-justify-content-between">
+                <div class="addCartMessage-wrap h-justify-content-center h-none">
+                  <div class="close-addCartMessage">X</div>
+                  <div class="addCartMessage h-flex h-justify-content-center">
+                    <div class="addCartMessage-productPhoto-wrap">
+                      <div class="addCartMessage-productPhoto"></div>
+                    </div>
+                    <div class="addCartMessage-productInfoText">
+                      <h5 class="addCartMessage-title">已添加入購物車</h5>
+                      <div class="addCartMessage-productName">透肌澎澎防曬襯衫</div>
+                      <span class="addCartMessage-productTotalNum">1</span>
+                      <span class="addCartMessage-productTotalPrice">599</span>
+                    </div>
+                    
+                  </div>
+                  <a href="./cart.html" class="addCartMessageBtn h-inline-block">查看購物車</a href="#">
+                </div>
+                <p class="product-warn"></p>
+                <div class="product-introduction-description">
+                  <p class="product-material">
+                    棉 100%<br />厚薄:薄<br />彈性:無
+                  </p>
+                </div>
+                <div class="product-making-place">
+                  <div class="product-place">素材產地/中國</div>
+                  <div class="product-place">加工產地/中國</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container-product">
+          <div class="product-detail-wrap">
+            <div class="product-detail title h-flex h-align-items-center">
+              細部說明
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer h-flex h-align-items-center">
+        <div class="container h-flex h-align-items-md-center h-flex-wrap h-justify-content-center">
+          <nav class="footer-nav">
+            <ul class="footer-nav-menus h-flex-column h-flex-md-row h-flex h-flex-wrap h-flex-md-nowrap">
+              <li class="footer-nav-list active">
+                <a href="#">關於 Stylish</a>
+              </li>
+              <li class="footer-nav-list"><a href="#">服務條款</a></li>
+              <li class="footer-nav-list"><a href="#">隱私政策</a></li>
+              <li class="footer-nav-list"><a href="#">聯絡我們</a></li>
+              <li class="footer-nav-list"><a href="#">FAQ</a></li>
+            </ul>
+          </nav>
+          <div class="footer-contact-icons">
+            <a href="#" class="contact-icon link h-inline-block"></a>
+            <a href="#" class="contact-icon twitter h-inline-block"></a>
+            <a href="#" class="contact-icon facebook h-inline-block"></a>
+          </div>
+          <div class="footer-allRightsReserved">
+            © 2018. All rights reserved.
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/getApi.js"></script>
+    <script src="./js/printgetData.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/storage.js"></script>
+    <script src="./js/product.js"></script>
+    <script src="./js/facebook.js"></script>
+  </body>
+</html>
