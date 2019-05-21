@@ -1,5 +1,5 @@
 const BetaFBNum = '1255228684626335';
-const OnLineFBNum = '408140739995102';
+const OnLineFBNum = '1255228684626335';
 
 /*global FB printProfileInfo*/
 
@@ -73,13 +73,13 @@ function facebookLogout(){
   FB.getLoginStatus(function(response) {
     if (response.status === 'connected') {
       FB.api(`/me/permissions`, "DELETE", function(res) {
-        console.log(res)
+        console.log(res);
+        window.location.href = '/';
       })
       FB.logout(function() {
         let userInfo = [];
         localStorage.setItem('userInfoData', JSON.stringify(userInfo));
         checkLoginState();
-        location.reload();
       });
     }
   });

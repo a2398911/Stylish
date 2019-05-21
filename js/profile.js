@@ -37,4 +37,3 @@ oderInfoWrap.addEventListener('click', changeOderInfoItem);
 
 logInFbBtn.addEventListener('click', facebookLogin);
 logOutFbBtn.addEventListener('click', facebookLogout);
-// logOutFbBtn.setAttribute("onclick", "facebookLogout()")
