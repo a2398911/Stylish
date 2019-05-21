@@ -74,7 +74,7 @@ function facebookLogout(){
     if (response.status === 'connected') {
       FB.api(`/me/permissions`, "DELETE", function(res) {
         console.log(res);
-        window.location.href = '/';
+        window.location.href = '/Stylish';
       })
       FB.logout(function() {
         let userInfo = [];
